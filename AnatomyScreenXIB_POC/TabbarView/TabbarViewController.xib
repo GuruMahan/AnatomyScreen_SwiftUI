@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarViewController" customModule="AnatomyScreenXIB_POC" customModuleProvider="target">
+            <connections>
+                <outlet property="TabbarItem1" destination="k9N-gL-gw5" id="lEV-Fr-BId"/>
+                <outlet property="TabbarItem2" destination="7pw-5A-8ab" id="pXV-uX-mMn"/>
+                <outlet property="TabbarItem3" destination="f4w-bH-ZeF" id="OPn-bi-aYQ"/>
+                <outlet property="TabbarItem4" destination="W7d-K2-8S8" id="Xgz-UP-Csk"/>
+                <outlet property="TabbarItem5" destination="EsL-sM-dC9" id="C2c-vP-wl5"/>
+                <outlet property="tabbar" destination="T7h-Za-XbW" id="to6-ll-BOh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7h-Za-XbW">
+                    <rect key="frame" x="0.0" y="769" width="393" height="83"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="Ruh-nJ-GLZ"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem tag="1" systemItem="favorites" id="k9N-gL-gw5"/>
+                        <tabBarItem tag="2" title="Share" image="square.and.arrow.up.fill" catalog="system" id="7pw-5A-8ab"/>
+                        <tabBarItem tag="3" title="Home" image="house.fill" catalog="system" id="f4w-bH-ZeF"/>
+                        <tabBarItem tag="4" title="File" image="folder" catalog="system" id="W7d-K2-8S8"/>
+                        <tabBarItem tag="5" systemItem="more" id="EsL-sM-dC9"/>
+                    </items>
+                </tabBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzS-BM-F42">
+                    <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FzS-BM-F42" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4PL-jP-7EA"/>
+                <constraint firstItem="T7h-Za-XbW" firstAttribute="top" secondItem="FzS-BM-F42" secondAttribute="bottom" id="8W8-OQ-raS"/>
+                <constraint firstItem="T7h-Za-XbW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9ge-OI-6bF"/>
+                <constraint firstItem="T7h-Za-XbW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Kfy-Iv-AtL"/>
+                <constraint firstItem="FzS-BM-F42" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OkI-MY-uGr"/>
+                <constraint firstItem="T7h-Za-XbW" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="bCY-7w-ccA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FzS-BM-F42" secondAttribute="trailing" id="pBc-cm-tse"/>
+            </constraints>
+            <point key="canvasLocation" x="244" y="-99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
